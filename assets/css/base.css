@@ -9,6 +9,11 @@
     --color-blue: #0f5b9a;
     --backgroud-gray: #f4f4f4;
     --navbar-width: 296px;
+    --slider-banner-width: 602px;
+}
+
+img {
+    width: 100%;
 }
 
 html {
@@ -257,9 +262,9 @@ span.orange {
     right: 0;
     background-color: var(--white-color);
     padding: 10px 0px;
-    z-index: 1;
     box-shadow: 0px 0px 5px 0px #ccc;
     display: none;
+    z-index: 2;
 }
 
 .header-fix--active {
@@ -326,6 +331,7 @@ span.orange {
     border-radius: 14px;
     background-color: var(--white-color);
     flex-shrink: 0;
+    z-index: 1;
 }
 
 .navbar__list {
@@ -581,6 +587,7 @@ span.orange {
     display: flex;
     margin: 0 0 10px;
     align-items: center;
+    padding-right: 8px;
 }
 
 .footer__showroom-content-icon {
