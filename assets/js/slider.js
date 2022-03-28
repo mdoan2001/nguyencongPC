@@ -29,7 +29,7 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-    $(".content__product").slick({
+    $(".content__product-list").slick({
         slidesToShow: 5,
         slidesToScroll: 1,
         infinite: false,

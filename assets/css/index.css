@@ -79,6 +79,7 @@
 .content__list-card-img {
     width: 100%;
     border-radius: 15px;
+    margin-top: 12px;
 }
 
 
@@ -86,7 +87,7 @@
 
 .content__sale {
     position: relative;
-    margin-top: 18px;
+    margin: 18px 0 28px 0;
     background-image: url(../img/sale/bg-sale.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -156,11 +157,113 @@
     overflow: hidden;
 }
 
+.content__product--white {
+    background-color: var(--white-color);
+    border-radius: 30px;
+    padding-bottom: 22px;
+    margin-bottom: 20px;
+}
+
+.content__product-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12px;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.content__product-brand {
+    display: flex;
+    margin: 20px 6px;
+}
+
+.content__product-brand-item {
+    flex: 1;
+    border: 1px solid #e1e1e1;
+    margin: 0 6px;
+}
+
+.content__product-brand-title {
+    border: none;
+    font-size: 1.8rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+.content__product-list-price {
+    display: flex;
+    margin: 20px 6px;
+}
+
+.content__product-item-price {
+    flex: 1;
+    font-size: 1.8rem;
+    line-height: 36px;
+    padding: 0 10px;
+    background-color: #f4f4f4;
+    margin: 0 6px;
+}
+
+.content__product-item-price-title {
+    padding: 0;
+    background-color: transparent;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+.content__product-title {
+    padding: 0 0 8px;
+    font-size: 2.6rem;
+    line-height: 52px;
+    font-weight: 900;
+}
+
+.content__product-with-link {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content__product-opstions {
+    list-style: none;
+    display: flex;
+    margin-left: 50px;
+}
+
+.content__product-opstion-link {
+    display: block;
+    padding: 0 25px;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: var(--color-text);
+    position: relative;
+}
+
+.content__product-opstion+.content__product-opstion {
+    border-left: 1px solid #000;
+}
+
+.content__product-link {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
 .content__product-item {
     background-color: var(--white-color);
     margin: 0 6px;
-    padding: 10px;
     border-radius: 10px;
+    text-decoration: none;
+    color: var(--color-text);
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.content__product-img {
+    width: 100%;
 }
 
 .content__product-save {
@@ -268,4 +371,12 @@
     right: -18px;
     padding-left: 10px;
     text-align: left;
+}
+
+
+/* Tin công nghệ */
+
+.content__news {
+    background-color: var(--white-color);
+    min-height: 500px;
 }

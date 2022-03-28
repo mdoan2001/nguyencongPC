@@ -12,9 +12,10 @@
     --slider-banner-width: 602px;
 }
 
-img {
+
+/* img {
     width: 100%;
-}
+} */
 
 html {
     scroll-behavior: smooth;
@@ -736,7 +737,6 @@ span.orange {
     border-radius: 50%;
     text-align: center;
     line-height: 34px;
-    background-color: red;
     text-decoration: none;
 }
 
