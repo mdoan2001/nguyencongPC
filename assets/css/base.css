@@ -12,11 +12,6 @@
     --slider-banner-width: 602px;
 }
 
-
-/* img {
-    width: 100%;
-} */
-
 html {
     scroll-behavior: smooth;
 }
@@ -28,6 +23,24 @@ html {
     font-size: 62.5%;
     font-family: 'Mulish', sans-serif;
     line-height: 1.6rem;
+}
+
+@-webkit-keyframes gradient {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
 }
 
 @keyframes FadeInTop {
@@ -58,6 +71,31 @@ span.orange {
     font-size: 14px;
     font-weight: bold;
     margin-right: 10px;
+}
+
+.header-nav {
+    background-color: #f4f4f4;
+    padding: 8px 0;
+}
+
+.header__main {
+    padding-bottom: 15px;
+}
+
+.header__main-nav {
+    padding-left: 12px;
+    display: flex;
+}
+
+.header__main-nav-icon {
+    padding: 0 12px;
+    font-size: 1.1rem;
+}
+
+.header__main-nav-link {
+    text-decoration: none;
+    color: #666666;
+    font-size: 1.6rem;
 }
 
 .header {
@@ -112,24 +150,6 @@ span.orange {
     animation-timing-function: linear;
 }
 
-@-webkit-keyframes gradient {
-    0% {
-        background-position: 0 0;
-    }
-    100% {
-        background-position: -200% 0;
-    }
-}
-
-@keyframes gradient {
-    0% {
-        background-position: 0 0;
-    }
-    100% {
-        background-position: -200% 0;
-    }
-}
-
 .header__top-link-item {
     display: flex;
     align-items: center;
@@ -178,6 +198,7 @@ span.orange {
 .header__main-img {
     width: 287px;
     height: auto;
+    cursor: pointer;
 }
 
 .header__main-search {

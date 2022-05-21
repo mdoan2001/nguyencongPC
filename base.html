@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="assets/css/grid.css">
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/reponsive_model.css">
-    <title>Nguyễn Minh Đoàn</title>
+    <title>LOGIN</title>
 </head>
 
 <body>
@@ -69,7 +69,7 @@
             <div class="header__main-container">
                 <div class="grid wide">
                     <div class="header__main">
-                        <img src="assets/img/logo.png" alt="" class="header__main-img">
+                        <img src="assets/img/logo.png" alt="" class="header__main-img" onclick="Redirect('index.html');">
                         <div class="header__main-search">
                             <div class="header__main-search-group">
                                 <input class="header__main-search-input" type="text" placeholder="Nhập tên sản phẩm, từ khóa cần tìm...">
@@ -121,13 +121,13 @@
             <div class="header-fix">
                 <div class="grid wide">
                     <div class="header__main">
-                        <nav class="header__main-list">
+                        <div class="header__main-list ">
                             <div class="header__main-list-title">
                                 <i class="header__main-list-icon fa-solid fa-bars"></i>
                                 <div class="header__main-list-text">DANH MỤC SẢN PHẨM</div>
                                 <i class="header__main-down-icon ti-angle-down"></i>
                             </div>
-                            <!-- <div class="header-fix__navbar">
+                            <div class="header-fix__navbar">
                                 <nav class="navbar">
                                     <ul class="navbar__list">
                                         <li class="navbar__item">
@@ -937,8 +937,8 @@
                                         </li>
                                     </ul>
                                 </nav>
-                            </div> -->
-                        </nav>
+                            </div>
+                        </div>
                         <div class="header__main-search">
                             <div class="header__main-search-group">
                                 <input class="header__main-search-input" type="text" placeholder="Nhập tên sản phẩm, từ khóa cần tìm...">
@@ -968,821 +968,843 @@
                 </div>
 
             </div>
+            <div class="header-nav">
+                <div class="grid wide">
+                    <div class="header__main">
+                        <nav class="header__main-list">
+                            <div class="header__main-list-title">
+                                <i class="header__main-list-icon fa-solid fa-bars"></i>
+                                <div class="header__main-list-text">DANH MỤC SẢN PHẨM</div>
+                                <i class="header__main-down-icon ti-angle-down"></i>
+                            </div>
+                            <div class="header-fix__navbar">
+                                <nav class="navbar">
+                                    <ul class="navbar__list">
+                                        <li class="navbar__item">
+                                            <a href="#" class="navbar__link">
+                                                <i class="navbar__icon fa-solid fa-laptop"></i>
+                                                <p class="navbar__name">LAPTOP - PHỤ KIỆN</p>
+                                            </a>
+                                            <div class="navbar__sub">
+                                                <div class="grid">
+                                                    <div class="row ">
+                                                        <div class="col l-2-4 m-4 c-6">
+                                                            <div class="navbar__sub-item">
+                                                                <h2 class="navbar__item-title">LAPTOP GAMING</h2>
+                                                                <a href="#" class="navbar__item-link"></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col l-2-4 m-4 c-6">
+                                                            <div class="navbar__sub-item">
+                                                                <h2 class="navbar__item-title">CHỌN THEO NHU CẦU</h2>
+                                                                <a href="#" class="navbar__item-link">Laptop gaming</a>
+                                                                <a href="#" class="navbar__item-link">Laptop Đồ họa - kiến trúc</a>
+                                                                <a href="#" class="navbar__item-link">Laptop văn phòng</a>
+                                                                <a href="#" class="navbar__item-link">Laptop mỏng nhẹ</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col l-2-4 m-4 c-6">
+                                                            <div class="navbar__sub-item">
+                                                                <h2 class="navbar__item-title">CHỌN THEO KHOẢNG GIÁ</h2>
+                                                                <a href="#" class="navbar__item-link">Dưới 10 triệu</a>
+                                                                <a href="#" class="navbar__item-link">10 triệu - 15 triệu</a>
+                                                                <a href="#" class="navbar__item-link">15 triệu - 20 triệu</a>
+                                                                <a href="#" class="navbar__item-link">20 triệu - 30 triệu</a>
+                                                                <a href="#" class="navbar__item-link">30 triệu - 50 triệu</a>
+                                                                <a href="#" class="navbar__item-link">50 triệu - 100 triệu</a>
+                                                                <a href="#" class="navbar__item-link">Trên 100 triệu</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col l-2-4 m-4 c-6">
+                                                            <div class="navbar__sub-item">
+                                                                <h2 class="navbar__item-title">CHỌN THEO CPU</h2>
+                                                                <a href="#" class="navbar__item-link">Intel Celeron/Pentium</a>
+                                                                <a href="#" class="navbar__item-link">Intel Core I3</a>
+                                                                <a href="#" class="navbar__item-link">Intel Core I5</a>
+                                                                <a href="#" class="navbar__item-link">Intel Core I7</a>
+                                                                <a href="#" class="navbar__item-link">Intel Core I9</a>
+                                                                <a href="#" class="navbar__item-link">AMD Ryzen 3</a>
+                                                                <a href="#" class="navbar__item-link">AMD Ryzen 5</a>
+                                                                <a href="#" class="navbar__item-link">AMD Ryzen 7</a>
+                                                                <a href="#" class="navbar__item-link">AMD Ryzen 9</a>
+                                                                <a href="#" class="navbar__item-link">Apple M1</a>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col l-2-4 m-4 c-6">
+                                                            <div class="navbar__sub-item">
+                                                                <h2 class="navbar__item-title">CHỌN THEO HÃNG</h2>
+                                                                <a href="#" class="navbar__item-link">Laptop DEell</a>
+                                                                <a href="#" class="navbar__item-link">Laptop HP</a>
+                                                                <a href="#" class="navbar__item-link">Laptop Lennovo</a>
+                                                                <a href="#" class="navbar__item-link">Laptop LG</a>
+                                                                <a href="#" class="navbar__item-link">Laptop Asus</a>
+                                                                <a href="#" class="navbar__item-link">Laptop Gigabyte</a>
+                                                                <a href="#" class="navbar__item-link">Laptop MSI</a>
+                                                                <a href="#" class="navbar__item-link">Laptop Acer</a>
+                                                                <a href="#" class="navbar__item-link">Laptop Apple</a>
+                                                                <a href="#" class="navbar__item-link">Laptop Microsoft</a>
+                                                                <a href="#" class="navbar__item-link">Laptop XPG</a>
+                                                                <a href="#" class="navbar__item-link">Laptop Colorfull</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="navbar__item">
+                                            <a href="#" class="navbar__link">
+                                                <i class="navbar__icon fa-solid fa-computer"></i>
+                                                <p class="navbar__name">PC ĐỒ HỌA - LÀM VIỆC</p>
+                                            </a>
+                                            <div class="navbar__sub">
+                                                <div class="grid">
+                                                    <div class="row">
+                                                        <div class="col l-2-4 m-4 c-6">
+                                                            <div class="navbar__sub-item">
+                                                                <h2 class="navbar__item-title">PC DỰNG PHIM - EDITOR</h2>
+                                                                <a href="#" class="navbar__item-link"></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col l-2-4 m-4 c-6">
+                                                            <div class="navbar__sub-item">
+                                                                <h2 class="navbar__item-title">PC AUDIO - MUSIC</h2>
+                                                                <a href="#" class="navbar__item-link"></a>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col l-2-4 m-4 c-6">
+                                                            <div class="navbar__sub-item">
+                                                                <h2 class="navbar__item-title">PC ĐỒ HỌA 3DS - KIẾN TRÚC</h2>
+                                                                <a href="#" class="navbar__item-link"></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col l-2-4 m-4 c-6">
+                                                            <div class="navbar__sub-item">
+                                                                <h2 class="navbar__item-title">PC ĐỒ HỌA AUTOCAD</h2>
+                                                                <a href="#" class="navbar__item-link"></a>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col l-2-4 m-4 c-6">
+                                                            <div class="navbar__sub-item">
+                                                                <h2 class="navbar__item-title">BỘ MÁY SỬ DỤNG CPU INTEL XEON</h2>
+                                                                <a href="#" class="navbar__item-link"></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col l-2-4 m-4 c-6">
+                                                            <div class="navbar__sub-item">
+                                                                <h2 class="navbar__item-title">BỘ MÁY SỬ DỤNG CPU AMD</h2>
+                                                                <a href="#" class="navbar__item-link"></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col l-2-4 m-4 c-6">
+                                                            <div class="navbar__sub-item">
+                                                                <h2 class="navbar__item-title">BỘ MÁY SỬ DỤNG CPU INTEL CORE 1</h2>
+                                                                <a href="#" class="navbar__item-link"></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col l-2-4 m-4 c-6">
+                                                            <div class="navbar__sub-item">
+                                                                <h2 class="navbar__item-title">PC AI - TRÍ TUỆ NHÂN TẠO</h2>
+                                                                <a href="#" class="navbar__item-link"></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col l-2-4 m-4 c-6">
+                                                            <div class="navbar__sub-item">
+                                                                <h2 class="navbar__item-title">BỘ MÁY SỬ DỤNG CPU INTEL XEON</h2>
+                                                                <a href="#" class="navbar__item-link"></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col l-2-4 m-4 c-6">
+                                                            <div class="navbar__sub-item">
+                                                                <h2 class="navbar__item-title">SEVER MÁY ẢO HÓA</h2>
+                                                                <a href="#" class="navbar__item-link"></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col l-2-4 m-4 c-6">
+                                                            <div class="navbar__sub-item">
+                                                                <h2 class="navbar__item-title">BỘ MÁY TÍNH VĂN PHÒNG</h2>
+                                                                <a href="#" class="navbar__item-link"></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col l-2-4 m-4 c-6">
+                                                            <div class="navbar__sub-item">
+                                                                <h2 class="navbar__item-title">APPLE IMAC</h2>
+                                                                <a href="#" class="navbar__item-link"></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col l-2-4 m-4 c-6">
+                                                            <div class="navbar__sub-item">
+                                                                <h2 class="navbar__item-title">MÁY TÍNH ĐỒNG BỘ</h2>
+                                                                <a href="#" class="navbar__item-link"></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col l-2-4 m-4 c-6">
+                                                            <div class="navbar__sub-item">
+                                                                <h2 class="navbar__item-title">PC ANIMATION - VFX</h2>
+                                                                <a href="#" class="navbar__item-link"></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="navbar__item">
+                                            <a href="#" class="navbar__link">
+                                                <i class="navbar__icon fa-solid fa-desktop"></i>
+                                                <p class="navbar__name">PC GAMING</p>
+                                            </a>
+                                            <div class="navbar__sub">
+                                                <div class="grid">
+                                                    <div class="row ">
+                                                        <div class="col l-2-4 m-4 c-6">
+                                                            <div class="navbar__sub-item">
+                                                                <h2 class="navbar__item-title">CHỌN THEO NHU CẦU</h2>
+                                                                <a href="#" class="navbar__item-link">PC ESPORT</a>
+                                                                <a href="#" class="navbar__item-link">PC GAME AAA</a>
+                                                                <a href="#" class="navbar__item-link">PC STREAM GAME</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col l-2-4 m-4 c-6">
+                                                            <div class="navbar__sub-item">
+                                                                <h2 class="navbar__item-title">CHỌN THEO KHOẢNG GIÁ</h2>
+                                                                <a href="#" class="navbar__item-link">Dưới 10 triệu</a>
+                                                                <a href="#" class="navbar__item-link">10 triệu - 15 triệu</a>
+                                                                <a href="#" class="navbar__item-link">15 triệu - 20 triệu</a>
+                                                                <a href="#" class="navbar__item-link">20 triệu - 30 triệu</a>
+                                                                <a href="#" class="navbar__item-link">30 triệu - 50 triệu</a>
+                                                                <a href="#" class="navbar__item-link">50 triệu - 100 triệu</a>
+                                                                <a href="#" class="navbar__item-link">Trên 100 triệu</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="navbar__item">
+                                            <a href="#" class="navbar__link">
+                                                <i class="navbar__icon fa-solid fa-microchip"></i>
+                                                <p class="navbar__name">LINH KIỆN MÁY TÍNH</p>
+                                            </a>
+                                            <div class="navbar__sub">
+                                                <div class="grid">
+                                                    <div class="row ">
+                                                        <div class="col l-2-4 m-4 c-6">
+                                                            <div class="navbar__sub-item">
+                                                                <h2 class="navbar__item-title">CPU - BỘ VI XỬ LÝ</h2>
+                                                                <a href="#" class="navbar__item-link">CPU AMD</a>
+                                                                <a href="#" class="navbar__item-link">CPU INTEL</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col l-2-4 m-4 c-6">
+                                                            <div class="navbar__sub-item">
+                                                                <h2 class="navbar__item-title">MAIN - BO MẠCH CHỦ</h2>
+                                                                <a href="#" class="navbar__item-link">Main NZXT</a>
+                                                                <a href="#" class="navbar__item-link">Main Supermcro</a>
+                                                                <a href="#" class="navbar__item-link">Main MSI</a>
+                                                                <a href="#" class="navbar__item-link">Main Gigabyte</a>
+                                                                <a href="#" class="navbar__item-link">Main Asus</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col l-2-4 m-4 c-6">
+                                                            <div class="navbar__sub-item">
+                                                                <h2 class="navbar__item-title">RAM - BỘ NHỚ TRONG</h2>
+                                                                <a href="#" class="navbar__item-link">RAM Colorfull</a>
+                                                                <a href="#" class="navbar__item-link">RAM Laptop</a>
+                                                                <a href="#" class="navbar__item-link">RAM OCPC</a>
+                                                                <a href="#" class="navbar__item-link">RAM Team</a>
+                                                                <a href="#" class="navbar__item-link">RAM Micron</a>
+                                                                <a href="#" class="navbar__item-link">RAM Kingston</a>
+                                                                <a href="#" class="navbar__item-link">RAM Kingmax</a>
+                                                                <a href="#" class="navbar__item-link">RAM HP</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col l-2-4 m-4 c-6">
+                                                            <div class="navbar__sub-item">
+                                                                <h2 class="navbar__item-title">VGA - CARD MÀN HÌNH</h2>
+                                                                <a href="#" class="navbar__item-link">VGA Manli</a>
+                                                                <a href="#" class="navbar__item-link">VGA Zotac</a>
+                                                                <a href="#" class="navbar__item-link">VGA Saphire</a>
+                                                                <a href="#" class="navbar__item-link">VGA Powercolor</a>
+                                                                <a href="#" class="navbar__item-link">VGA MSI</a>
+                                                                <a href="#" class="navbar__item-link">VGA Gigabyte</a>
+                                                                <a href="#" class="navbar__item-link">VGA Evga</a>
+                                                                <a href="#" class="navbar__item-link">VGA Asrock</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col l-2-4 m-4 c-6">
+                                                            <div class="navbar__sub-item">
+                                                                <h2 class="navbar__item-title">PSU - NGUỒN MÁY TÍNH</h2>
+                                                                <a href="#" class="navbar__item-link">Nguồn GAMEMAX</a>
+                                                                <a href="#" class="navbar__item-link">Nguồn NZXT</a>
+                                                                <a href="#" class="navbar__item-link">Nguồn Xigmatek</a>
+                                                                <a href="#" class="navbar__item-link">Nguồn Tech</a>
+                                                                <a href="#" class="navbar__item-link">Nguồn Sma</a>
+                                                                <a href="#" class="navbar__item-link">Nguồn GiGabyte</a>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="navbar__item">
+                                            <a href="#" class="navbar__link">
+                                                <i class="navbar__icon fa-solid fa-hard-drive"></i>
+                                                <p class="navbar__name">THIẾT BỊ LƯU TRỮ</p>
+                                            </a>
+                                            <div class="navbar__sub">
+                                                <div class="grid">
+                                                    <div class="row ">
+                                                        <div class="col l-2-4 m-4 c-6">
+                                                            <div class="navbar__sub-item">
+                                                                <h2 class="navbar__item-title">CPU - BỘ VI XỬ LÝ</h2>
+                                                                <a href="#" class="navbar__item-link">CPU AMD</a>
+                                                                <a href="#" class="navbar__item-link">CPU INTEL</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col l-2-4 m-4 c-6">
+                                                            <div class="navbar__sub-item">
+                                                                <h2 class="navbar__item-title">MAIN - BO MẠCH CHỦ</h2>
+                                                                <a href="#" class="navbar__item-link">Main NZXT</a>
+                                                                <a href="#" class="navbar__item-link">Main Supermcro</a>
+                                                                <a href="#" class="navbar__item-link">Main MSI</a>
+                                                                <a href="#" class="navbar__item-link">Main Gigabyte</a>
+                                                                <a href="#" class="navbar__item-link">Main Asus</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col l-2-4 m-4 c-6">
+                                                            <div class="navbar__sub-item">
+                                                                <h2 class="navbar__item-title">RAM - BỘ NHỚ TRONG</h2>
+                                                                <a href="#" class="navbar__item-link">RAM Colorfull</a>
+                                                                <a href="#" class="navbar__item-link">RAM Laptop</a>
+                                                                <a href="#" class="navbar__item-link">RAM OCPC</a>
+                                                                <a href="#" class="navbar__item-link">RAM Team</a>
+                                                                <a href="#" class="navbar__item-link">RAM Micron</a>
+                                                                <a href="#" class="navbar__item-link">RAM Kingston</a>
+                                                                <a href="#" class="navbar__item-link">RAM Kingmax</a>
+                                                                <a href="#" class="navbar__item-link">RAM HP</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col l-2-4 m-4 c-6">
+                                                            <div class="navbar__sub-item">
+                                                                <h2 class="navbar__item-title">VGA - CARD MÀN HÌNH</h2>
+                                                                <a href="#" class="navbar__item-link">VGA Manli</a>
+                                                                <a href="#" class="navbar__item-link">VGA Zotac</a>
+                                                                <a href="#" class="navbar__item-link">VGA Saphire</a>
+                                                                <a href="#" class="navbar__item-link">VGA Powercolor</a>
+                                                                <a href="#" class="navbar__item-link">VGA MSI</a>
+                                                                <a href="#" class="navbar__item-link">VGA Gigabyte</a>
+                                                                <a href="#" class="navbar__item-link">VGA Evga</a>
+                                                                <a href="#" class="navbar__item-link">VGA Asrock</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col l-2-4 m-4 c-6">
+                                                            <div class="navbar__sub-item">
+                                                                <h2 class="navbar__item-title">PSU - NGUỒN MÁY TÍNH</h2>
+                                                                <a href="#" class="navbar__item-link">Nguồn GAMEMAX</a>
+                                                                <a href="#" class="navbar__item-link">Nguồn NZXT</a>
+                                                                <a href="#" class="navbar__item-link">Nguồn Xigmatek</a>
+                                                                <a href="#" class="navbar__item-link">Nguồn Tech</a>
+                                                                <a href="#" class="navbar__item-link">Nguồn Sma</a>
+                                                                <a href="#" class="navbar__item-link">Nguồn GiGabyte</a>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="navbar__item">
+                                            <a href="#" class="navbar__link">
+                                                <i class="navbar__icon fa-solid fa-desktop"></i>
+                                                <p class="navbar__name">MÀN HÌNH MÁY TÍNH</p>
+                                            </a>
+                                            <div class="navbar__sub">
+                                                <div class="grid">
+                                                    <div class="row ">
+                                                        <div class="col l-2-4 m-4 c-6">
+                                                            <div class="navbar__sub-item">
+                                                                <h2 class="navbar__item-title">CPU - BỘ VI XỬ LÝ</h2>
+                                                                <a href="#" class="navbar__item-link">CPU AMD</a>
+                                                                <a href="#" class="navbar__item-link">CPU INTEL</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col l-2-4 m-4 c-6">
+                                                            <div class="navbar__sub-item">
+                                                                <h2 class="navbar__item-title">MAIN - BO MẠCH CHỦ</h2>
+                                                                <a href="#" class="navbar__item-link">Main NZXT</a>
+                                                                <a href="#" class="navbar__item-link">Main Supermcro</a>
+                                                                <a href="#" class="navbar__item-link">Main MSI</a>
+                                                                <a href="#" class="navbar__item-link">Main Gigabyte</a>
+                                                                <a href="#" class="navbar__item-link">Main Asus</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col l-2-4 m-4 c-6">
+                                                            <div class="navbar__sub-item">
+                                                                <h2 class="navbar__item-title">RAM - BỘ NHỚ TRONG</h2>
+                                                                <a href="#" class="navbar__item-link">RAM Colorfull</a>
+                                                                <a href="#" class="navbar__item-link">RAM Laptop</a>
+                                                                <a href="#" class="navbar__item-link">RAM OCPC</a>
+                                                                <a href="#" class="navbar__item-link">RAM Team</a>
+                                                                <a href="#" class="navbar__item-link">RAM Micron</a>
+                                                                <a href="#" class="navbar__item-link">RAM Kingston</a>
+                                                                <a href="#" class="navbar__item-link">RAM Kingmax</a>
+                                                                <a href="#" class="navbar__item-link">RAM HP</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col l-2-4 m-4 c-6">
+                                                            <div class="navbar__sub-item">
+                                                                <h2 class="navbar__item-title">VGA - CARD MÀN HÌNH</h2>
+                                                                <a href="#" class="navbar__item-link">VGA Manli</a>
+                                                                <a href="#" class="navbar__item-link">VGA Zotac</a>
+                                                                <a href="#" class="navbar__item-link">VGA Saphire</a>
+                                                                <a href="#" class="navbar__item-link">VGA Powercolor</a>
+                                                                <a href="#" class="navbar__item-link">VGA MSI</a>
+                                                                <a href="#" class="navbar__item-link">VGA Gigabyte</a>
+                                                                <a href="#" class="navbar__item-link">VGA Evga</a>
+                                                                <a href="#" class="navbar__item-link">VGA Asrock</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col l-2-4 m-4 c-6">
+                                                            <div class="navbar__sub-item">
+                                                                <h2 class="navbar__item-title">PSU - NGUỒN MÁY TÍNH</h2>
+                                                                <a href="#" class="navbar__item-link">Nguồn GAMEMAX</a>
+                                                                <a href="#" class="navbar__item-link">Nguồn NZXT</a>
+                                                                <a href="#" class="navbar__item-link">Nguồn Xigmatek</a>
+                                                                <a href="#" class="navbar__item-link">Nguồn Tech</a>
+                                                                <a href="#" class="navbar__item-link">Nguồn Sma</a>
+                                                                <a href="#" class="navbar__item-link">Nguồn GiGabyte</a>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="navbar__item">
+                                            <a href="#" class="navbar__link">
+                                                <i class="navbar__icon fa-solid fa-computer-mouse"></i>
+                                                <p class="navbar__name">PHÍM CHUỘT, GHẾ, GEAR</p>
+                                            </a>
+                                            <div class="navbar__sub">
+                                                <div class="grid">
+                                                    <div class="row ">
+                                                        <div class="col l-2-4 m-4 c-6">
+                                                            <div class="navbar__sub-item">
+                                                                <h2 class="navbar__item-title">CPU - BỘ VI XỬ LÝ</h2>
+                                                                <a href="#" class="navbar__item-link">CPU AMD</a>
+                                                                <a href="#" class="navbar__item-link">CPU INTEL</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col l-2-4 m-4 c-6">
+                                                            <div class="navbar__sub-item">
+                                                                <h2 class="navbar__item-title">MAIN - BO MẠCH CHỦ</h2>
+                                                                <a href="#" class="navbar__item-link">Main NZXT</a>
+                                                                <a href="#" class="navbar__item-link">Main Supermcro</a>
+                                                                <a href="#" class="navbar__item-link">Main MSI</a>
+                                                                <a href="#" class="navbar__item-link">Main Gigabyte</a>
+                                                                <a href="#" class="navbar__item-link">Main Asus</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col l-2-4 m-4 c-6">
+                                                            <div class="navbar__sub-item">
+                                                                <h2 class="navbar__item-title">RAM - BỘ NHỚ TRONG</h2>
+                                                                <a href="#" class="navbar__item-link">RAM Colorfull</a>
+                                                                <a href="#" class="navbar__item-link">RAM Laptop</a>
+                                                                <a href="#" class="navbar__item-link">RAM OCPC</a>
+                                                                <a href="#" class="navbar__item-link">RAM Team</a>
+                                                                <a href="#" class="navbar__item-link">RAM Micron</a>
+                                                                <a href="#" class="navbar__item-link">RAM Kingston</a>
+                                                                <a href="#" class="navbar__item-link">RAM Kingmax</a>
+                                                                <a href="#" class="navbar__item-link">RAM HP</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col l-2-4 m-4 c-6">
+                                                            <div class="navbar__sub-item">
+                                                                <h2 class="navbar__item-title">VGA - CARD MÀN HÌNH</h2>
+                                                                <a href="#" class="navbar__item-link">VGA Manli</a>
+                                                                <a href="#" class="navbar__item-link">VGA Zotac</a>
+                                                                <a href="#" class="navbar__item-link">VGA Saphire</a>
+                                                                <a href="#" class="navbar__item-link">VGA Powercolor</a>
+                                                                <a href="#" class="navbar__item-link">VGA MSI</a>
+                                                                <a href="#" class="navbar__item-link">VGA Gigabyte</a>
+                                                                <a href="#" class="navbar__item-link">VGA Evga</a>
+                                                                <a href="#" class="navbar__item-link">VGA Asrock</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col l-2-4 m-4 c-6">
+                                                            <div class="navbar__sub-item">
+                                                                <h2 class="navbar__item-title">PSU - NGUỒN MÁY TÍNH</h2>
+                                                                <a href="#" class="navbar__item-link">Nguồn GAMEMAX</a>
+                                                                <a href="#" class="navbar__item-link">Nguồn NZXT</a>
+                                                                <a href="#" class="navbar__item-link">Nguồn Xigmatek</a>
+                                                                <a href="#" class="navbar__item-link">Nguồn Tech</a>
+                                                                <a href="#" class="navbar__item-link">Nguồn Sma</a>
+                                                                <a href="#" class="navbar__item-link">Nguồn GiGabyte</a>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="navbar__item">
+                                            <a href="#" class="navbar__link">
+                                                <i class="navbar__icon fa-solid fa-fan"></i>
+                                                <p class="navbar__name">TẢN NHIỆT PC - COOLING</p>
+                                            </a>
+                                            <div class="navbar__sub">
+                                                <div class="grid">
+                                                    <div class="row ">
+                                                        <div class="col l-2-4 m-4 c-6">
+                                                            <div class="navbar__sub-item">
+                                                                <h2 class="navbar__item-title">CPU - BỘ VI XỬ LÝ</h2>
+                                                                <a href="#" class="navbar__item-link">CPU AMD</a>
+                                                                <a href="#" class="navbar__item-link">CPU INTEL</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col l-2-4 m-4 c-6">
+                                                            <div class="navbar__sub-item">
+                                                                <h2 class="navbar__item-title">MAIN - BO MẠCH CHỦ</h2>
+                                                                <a href="#" class="navbar__item-link">Main NZXT</a>
+                                                                <a href="#" class="navbar__item-link">Main Supermcro</a>
+                                                                <a href="#" class="navbar__item-link">Main MSI</a>
+                                                                <a href="#" class="navbar__item-link">Main Gigabyte</a>
+                                                                <a href="#" class="navbar__item-link">Main Asus</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col l-2-4 m-4 c-6">
+                                                            <div class="navbar__sub-item">
+                                                                <h2 class="navbar__item-title">RAM - BỘ NHỚ TRONG</h2>
+                                                                <a href="#" class="navbar__item-link">RAM Colorfull</a>
+                                                                <a href="#" class="navbar__item-link">RAM Laptop</a>
+                                                                <a href="#" class="navbar__item-link">RAM OCPC</a>
+                                                                <a href="#" class="navbar__item-link">RAM Team</a>
+                                                                <a href="#" class="navbar__item-link">RAM Micron</a>
+                                                                <a href="#" class="navbar__item-link">RAM Kingston</a>
+                                                                <a href="#" class="navbar__item-link">RAM Kingmax</a>
+                                                                <a href="#" class="navbar__item-link">RAM HP</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col l-2-4 m-4 c-6">
+                                                            <div class="navbar__sub-item">
+                                                                <h2 class="navbar__item-title">VGA - CARD MÀN HÌNH</h2>
+                                                                <a href="#" class="navbar__item-link">VGA Manli</a>
+                                                                <a href="#" class="navbar__item-link">VGA Zotac</a>
+                                                                <a href="#" class="navbar__item-link">VGA Saphire</a>
+                                                                <a href="#" class="navbar__item-link">VGA Powercolor</a>
+                                                                <a href="#" class="navbar__item-link">VGA MSI</a>
+                                                                <a href="#" class="navbar__item-link">VGA Gigabyte</a>
+                                                                <a href="#" class="navbar__item-link">VGA Evga</a>
+                                                                <a href="#" class="navbar__item-link">VGA Asrock</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col l-2-4 m-4 c-6">
+                                                            <div class="navbar__sub-item">
+                                                                <h2 class="navbar__item-title">PSU - NGUỒN MÁY TÍNH</h2>
+                                                                <a href="#" class="navbar__item-link">Nguồn GAMEMAX</a>
+                                                                <a href="#" class="navbar__item-link">Nguồn NZXT</a>
+                                                                <a href="#" class="navbar__item-link">Nguồn Xigmatek</a>
+                                                                <a href="#" class="navbar__item-link">Nguồn Tech</a>
+                                                                <a href="#" class="navbar__item-link">Nguồn Sma</a>
+                                                                <a href="#" class="navbar__item-link">Nguồn GiGabyte</a>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="navbar__item">
+                                            <a href="#" class="navbar__link">
+                                                <i class="navbar__icon fa-solid fa-print"></i>
+                                                <p class="navbar__name">THIẾT BỊ VĂN PHÒNG</p>
+                                            </a>
+                                            <div class="navbar__sub">
+                                                <div class="grid">
+                                                    <div class="row ">
+                                                        <div class="col l-2-4 m-4 c-6">
+                                                            <div class="navbar__sub-item">
+                                                                <h2 class="navbar__item-title">CPU - BỘ VI XỬ LÝ</h2>
+                                                                <a href="#" class="navbar__item-link">CPU AMD</a>
+                                                                <a href="#" class="navbar__item-link">CPU INTEL</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col l-2-4 m-4 c-6">
+                                                            <div class="navbar__sub-item">
+                                                                <h2 class="navbar__item-title">MAIN - BO MẠCH CHỦ</h2>
+                                                                <a href="#" class="navbar__item-link">Main NZXT</a>
+                                                                <a href="#" class="navbar__item-link">Main Supermcro</a>
+                                                                <a href="#" class="navbar__item-link">Main MSI</a>
+                                                                <a href="#" class="navbar__item-link">Main Gigabyte</a>
+                                                                <a href="#" class="navbar__item-link">Main Asus</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col l-2-4 m-4 c-6">
+                                                            <div class="navbar__sub-item">
+                                                                <h2 class="navbar__item-title">RAM - BỘ NHỚ TRONG</h2>
+                                                                <a href="#" class="navbar__item-link">RAM Colorfull</a>
+                                                                <a href="#" class="navbar__item-link">RAM Laptop</a>
+                                                                <a href="#" class="navbar__item-link">RAM OCPC</a>
+                                                                <a href="#" class="navbar__item-link">RAM Team</a>
+                                                                <a href="#" class="navbar__item-link">RAM Micron</a>
+                                                                <a href="#" class="navbar__item-link">RAM Kingston</a>
+                                                                <a href="#" class="navbar__item-link">RAM Kingmax</a>
+                                                                <a href="#" class="navbar__item-link">RAM HP</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col l-2-4 m-4 c-6">
+                                                            <div class="navbar__sub-item">
+                                                                <h2 class="navbar__item-title">VGA - CARD MÀN HÌNH</h2>
+                                                                <a href="#" class="navbar__item-link">VGA Manli</a>
+                                                                <a href="#" class="navbar__item-link">VGA Zotac</a>
+                                                                <a href="#" class="navbar__item-link">VGA Saphire</a>
+                                                                <a href="#" class="navbar__item-link">VGA Powercolor</a>
+                                                                <a href="#" class="navbar__item-link">VGA MSI</a>
+                                                                <a href="#" class="navbar__item-link">VGA Gigabyte</a>
+                                                                <a href="#" class="navbar__item-link">VGA Evga</a>
+                                                                <a href="#" class="navbar__item-link">VGA Asrock</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col l-2-4 m-4 c-6">
+                                                            <div class="navbar__sub-item">
+                                                                <h2 class="navbar__item-title">PSU - NGUỒN MÁY TÍNH</h2>
+                                                                <a href="#" class="navbar__item-link">Nguồn GAMEMAX</a>
+                                                                <a href="#" class="navbar__item-link">Nguồn NZXT</a>
+                                                                <a href="#" class="navbar__item-link">Nguồn Xigmatek</a>
+                                                                <a href="#" class="navbar__item-link">Nguồn Tech</a>
+                                                                <a href="#" class="navbar__item-link">Nguồn Sma</a>
+                                                                <a href="#" class="navbar__item-link">Nguồn GiGabyte</a>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="navbar__item">
+                                            <a href="#" class="navbar__link">
+                                                <i class="navbar__icon fa-solid fa-file-audio"></i>
+                                                <p class="navbar__name">THIẾT BỊ ÂM THANH</p>
+                                            </a>
+                                            <div class="navbar__sub">
+                                                <div class="grid">
+                                                    <div class="row ">
+                                                        <div class="col l-2-4 m-4 c-6">
+                                                            <div class="navbar__sub-item">
+                                                                <h2 class="navbar__item-title">CPU - BỘ VI XỬ LÝ</h2>
+                                                                <a href="#" class="navbar__item-link">CPU AMD</a>
+                                                                <a href="#" class="navbar__item-link">CPU INTEL</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col l-2-4 m-4 c-6">
+                                                            <div class="navbar__sub-item">
+                                                                <h2 class="navbar__item-title">MAIN - BO MẠCH CHỦ</h2>
+                                                                <a href="#" class="navbar__item-link">Main NZXT</a>
+                                                                <a href="#" class="navbar__item-link">Main Supermcro</a>
+                                                                <a href="#" class="navbar__item-link">Main MSI</a>
+                                                                <a href="#" class="navbar__item-link">Main Gigabyte</a>
+                                                                <a href="#" class="navbar__item-link">Main Asus</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col l-2-4 m-4 c-6">
+                                                            <div class="navbar__sub-item">
+                                                                <h2 class="navbar__item-title">RAM - BỘ NHỚ TRONG</h2>
+                                                                <a href="#" class="navbar__item-link">RAM Colorfull</a>
+                                                                <a href="#" class="navbar__item-link">RAM Laptop</a>
+                                                                <a href="#" class="navbar__item-link">RAM OCPC</a>
+                                                                <a href="#" class="navbar__item-link">RAM Team</a>
+                                                                <a href="#" class="navbar__item-link">RAM Micron</a>
+                                                                <a href="#" class="navbar__item-link">RAM Kingston</a>
+                                                                <a href="#" class="navbar__item-link">RAM Kingmax</a>
+                                                                <a href="#" class="navbar__item-link">RAM HP</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col l-2-4 m-4 c-6">
+                                                            <div class="navbar__sub-item">
+                                                                <h2 class="navbar__item-title">VGA - CARD MÀN HÌNH</h2>
+                                                                <a href="#" class="navbar__item-link">VGA Manli</a>
+                                                                <a href="#" class="navbar__item-link">VGA Zotac</a>
+                                                                <a href="#" class="navbar__item-link">VGA Saphire</a>
+                                                                <a href="#" class="navbar__item-link">VGA Powercolor</a>
+                                                                <a href="#" class="navbar__item-link">VGA MSI</a>
+                                                                <a href="#" class="navbar__item-link">VGA Gigabyte</a>
+                                                                <a href="#" class="navbar__item-link">VGA Evga</a>
+                                                                <a href="#" class="navbar__item-link">VGA Asrock</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col l-2-4 m-4 c-6">
+                                                            <div class="navbar__sub-item">
+                                                                <h2 class="navbar__item-title">PSU - NGUỒN MÁY TÍNH</h2>
+                                                                <a href="#" class="navbar__item-link">Nguồn GAMEMAX</a>
+                                                                <a href="#" class="navbar__item-link">Nguồn NZXT</a>
+                                                                <a href="#" class="navbar__item-link">Nguồn Xigmatek</a>
+                                                                <a href="#" class="navbar__item-link">Nguồn Tech</a>
+                                                                <a href="#" class="navbar__item-link">Nguồn Sma</a>
+                                                                <a href="#" class="navbar__item-link">Nguồn GiGabyte</a>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="navbar__item">
+                                            <a href="#" class="navbar__link">
+                                                <i class="navbar__icon fa-solid fa-network-wired"></i>
+                                                <p class="navbar__name">THIẾT BỊ MẠNG</p>
+                                            </a>
+                                            <div class="navbar__sub">
+                                                <div class="grid">
+                                                    <div class="row ">
+                                                        <div class="col l-2-4 m-4 c-6">
+                                                            <div class="navbar__sub-item">
+                                                                <h2 class="navbar__item-title">CPU - BỘ VI XỬ LÝ</h2>
+                                                                <a href="#" class="navbar__item-link">CPU AMD</a>
+                                                                <a href="#" class="navbar__item-link">CPU INTEL</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col l-2-4 m-4 c-6">
+                                                            <div class="navbar__sub-item">
+                                                                <h2 class="navbar__item-title">MAIN - BO MẠCH CHỦ</h2>
+                                                                <a href="#" class="navbar__item-link">Main NZXT</a>
+                                                                <a href="#" class="navbar__item-link">Main Supermcro</a>
+                                                                <a href="#" class="navbar__item-link">Main MSI</a>
+                                                                <a href="#" class="navbar__item-link">Main Gigabyte</a>
+                                                                <a href="#" class="navbar__item-link">Main Asus</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col l-2-4 m-4 c-6">
+                                                            <div class="navbar__sub-item">
+                                                                <h2 class="navbar__item-title">RAM - BỘ NHỚ TRONG</h2>
+                                                                <a href="#" class="navbar__item-link">RAM Colorfull</a>
+                                                                <a href="#" class="navbar__item-link">RAM Laptop</a>
+                                                                <a href="#" class="navbar__item-link">RAM OCPC</a>
+                                                                <a href="#" class="navbar__item-link">RAM Team</a>
+                                                                <a href="#" class="navbar__item-link">RAM Micron</a>
+                                                                <a href="#" class="navbar__item-link">RAM Kingston</a>
+                                                                <a href="#" class="navbar__item-link">RAM Kingmax</a>
+                                                                <a href="#" class="navbar__item-link">RAM HP</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col l-2-4 m-4 c-6">
+                                                            <div class="navbar__sub-item">
+                                                                <h2 class="navbar__item-title">VGA - CARD MÀN HÌNH</h2>
+                                                                <a href="#" class="navbar__item-link">VGA Manli</a>
+                                                                <a href="#" class="navbar__item-link">VGA Zotac</a>
+                                                                <a href="#" class="navbar__item-link">VGA Saphire</a>
+                                                                <a href="#" class="navbar__item-link">VGA Powercolor</a>
+                                                                <a href="#" class="navbar__item-link">VGA MSI</a>
+                                                                <a href="#" class="navbar__item-link">VGA Gigabyte</a>
+                                                                <a href="#" class="navbar__item-link">VGA Evga</a>
+                                                                <a href="#" class="navbar__item-link">VGA Asrock</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col l-2-4 m-4 c-6">
+                                                            <div class="navbar__sub-item">
+                                                                <h2 class="navbar__item-title">PSU - NGUỒN MÁY TÍNH</h2>
+                                                                <a href="#" class="navbar__item-link">Nguồn GAMEMAX</a>
+                                                                <a href="#" class="navbar__item-link">Nguồn NZXT</a>
+                                                                <a href="#" class="navbar__item-link">Nguồn Xigmatek</a>
+                                                                <a href="#" class="navbar__item-link">Nguồn Tech</a>
+                                                                <a href="#" class="navbar__item-link">Nguồn Sma</a>
+                                                                <a href="#" class="navbar__item-link">Nguồn GiGabyte</a>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="navbar__item">
+                                            <a href="#" class="navbar__link">
+                                                <i class="navbar__icon fa-solid fa-id-card"></i>
+                                                <p class="navbar__name">PHẦN MỀM BẢN QUYỀN</p>
+                                            </a>
+                                            <div class="navbar__sub">
+                                                <div class="grid">
+                                                    <div class="row ">
+                                                        <div class="col l-2-4 m-4 c-6">
+                                                            <div class="navbar__sub-item">
+                                                                <h2 class="navbar__item-title">CPU - BỘ VI XỬ LÝ</h2>
+                                                                <a href="#" class="navbar__item-link">CPU AMD</a>
+                                                                <a href="#" class="navbar__item-link">CPU INTEL</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col l-2-4 m-4 c-6">
+                                                            <div class="navbar__sub-item">
+                                                                <h2 class="navbar__item-title">MAIN - BO MẠCH CHỦ</h2>
+                                                                <a href="#" class="navbar__item-link">Main NZXT</a>
+                                                                <a href="#" class="navbar__item-link">Main Supermcro</a>
+                                                                <a href="#" class="navbar__item-link">Main MSI</a>
+                                                                <a href="#" class="navbar__item-link">Main Gigabyte</a>
+                                                                <a href="#" class="navbar__item-link">Main Asus</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col l-2-4 m-4 c-6">
+                                                            <div class="navbar__sub-item">
+                                                                <h2 class="navbar__item-title">RAM - BỘ NHỚ TRONG</h2>
+                                                                <a href="#" class="navbar__item-link">RAM Colorfull</a>
+                                                                <a href="#" class="navbar__item-link">RAM Laptop</a>
+                                                                <a href="#" class="navbar__item-link">RAM OCPC</a>
+                                                                <a href="#" class="navbar__item-link">RAM Team</a>
+                                                                <a href="#" class="navbar__item-link">RAM Micron</a>
+                                                                <a href="#" class="navbar__item-link">RAM Kingston</a>
+                                                                <a href="#" class="navbar__item-link">RAM Kingmax</a>
+                                                                <a href="#" class="navbar__item-link">RAM HP</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col l-2-4 m-4 c-6">
+                                                            <div class="navbar__sub-item">
+                                                                <h2 class="navbar__item-title">VGA - CARD MÀN HÌNH</h2>
+                                                                <a href="#" class="navbar__item-link">VGA Manli</a>
+                                                                <a href="#" class="navbar__item-link">VGA Zotac</a>
+                                                                <a href="#" class="navbar__item-link">VGA Saphire</a>
+                                                                <a href="#" class="navbar__item-link">VGA Powercolor</a>
+                                                                <a href="#" class="navbar__item-link">VGA MSI</a>
+                                                                <a href="#" class="navbar__item-link">VGA Gigabyte</a>
+                                                                <a href="#" class="navbar__item-link">VGA Evga</a>
+                                                                <a href="#" class="navbar__item-link">VGA Asrock</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col l-2-4 m-4 c-6">
+                                                            <div class="navbar__sub-item">
+                                                                <h2 class="navbar__item-title">PSU - NGUỒN MÁY TÍNH</h2>
+                                                                <a href="#" class="navbar__item-link">Nguồn GAMEMAX</a>
+                                                                <a href="#" class="navbar__item-link">Nguồn NZXT</a>
+                                                                <a href="#" class="navbar__item-link">Nguồn Xigmatek</a>
+                                                                <a href="#" class="navbar__item-link">Nguồn Tech</a>
+                                                                <a href="#" class="navbar__item-link">Nguồn Sma</a>
+                                                                <a href="#" class="navbar__item-link">Nguồn GiGabyte</a>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </nav>
+                        <div class="header__main-nav">
+                            <div class="header__main-nav-item">
+                                <a href="" class="header__main-nav-link">TRANG CHỦ</a>
+                            </div>
+                            <div class="header__main-nav-item">
+                                <i class="header__main-nav-icon ti-angle-right"></i>
+                                <a href="" class="header__main-nav-link">ĐĂNG NHẬP</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </header>
 
-        <div class="content">
-            <div class="grid wide">
-                <nav class="navbar">
-                    <ul class="navbar__list">
-                        <li class="navbar__item">
-                            <a href="#" class="navbar__link">
-                                <i class="navbar__icon fa-solid fa-laptop"></i>
-                                <p class="navbar__name">LAPTOP - PHỤ KIỆN</p>
-                            </a>
-                            <div class="navbar__sub">
-                                <div class="grid">
-                                    <div class="row ">
-                                        <div class="col l-2-4 m-4 c-6">
-                                            <div class="navbar__sub-item">
-                                                <h2 class="navbar__item-title">LAPTOP GAMING</h2>
-                                                <a href="#" class="navbar__item-link"></a>
-                                            </div>
-                                        </div>
-                                        <div class="col l-2-4 m-4 c-6">
-                                            <div class="navbar__sub-item">
-                                                <h2 class="navbar__item-title">CHỌN THEO NHU CẦU</h2>
-                                                <a href="#" class="navbar__item-link">Laptop gaming</a>
-                                                <a href="#" class="navbar__item-link">Laptop Đồ họa - kiến trúc</a>
-                                                <a href="#" class="navbar__item-link">Laptop văn phòng</a>
-                                                <a href="#" class="navbar__item-link">Laptop mỏng nhẹ</a>
-                                            </div>
-                                        </div>
-                                        <div class="col l-2-4 m-4 c-6">
-                                            <div class="navbar__sub-item">
-                                                <h2 class="navbar__item-title">CHỌN THEO KHOẢNG GIÁ</h2>
-                                                <a href="#" class="navbar__item-link">Dưới 10 triệu</a>
-                                                <a href="#" class="navbar__item-link">10 triệu - 15 triệu</a>
-                                                <a href="#" class="navbar__item-link">15 triệu - 20 triệu</a>
-                                                <a href="#" class="navbar__item-link">20 triệu - 30 triệu</a>
-                                                <a href="#" class="navbar__item-link">30 triệu - 50 triệu</a>
-                                                <a href="#" class="navbar__item-link">50 triệu - 100 triệu</a>
-                                                <a href="#" class="navbar__item-link">Trên 100 triệu</a>
-                                            </div>
-                                        </div>
-                                        <div class="col l-2-4 m-4 c-6">
-                                            <div class="navbar__sub-item">
-                                                <h2 class="navbar__item-title">CHỌN THEO CPU</h2>
-                                                <a href="#" class="navbar__item-link">Intel Celeron/Pentium</a>
-                                                <a href="#" class="navbar__item-link">Intel Core I3</a>
-                                                <a href="#" class="navbar__item-link">Intel Core I5</a>
-                                                <a href="#" class="navbar__item-link">Intel Core I7</a>
-                                                <a href="#" class="navbar__item-link">Intel Core I9</a>
-                                                <a href="#" class="navbar__item-link">AMD Ryzen 3</a>
-                                                <a href="#" class="navbar__item-link">AMD Ryzen 5</a>
-                                                <a href="#" class="navbar__item-link">AMD Ryzen 7</a>
-                                                <a href="#" class="navbar__item-link">AMD Ryzen 9</a>
-                                                <a href="#" class="navbar__item-link">Apple M1</a>
-                                            </div>
-                                        </div>
 
-                                        <div class="col l-2-4 m-4 c-6">
-                                            <div class="navbar__sub-item">
-                                                <h2 class="navbar__item-title">CHỌN THEO HÃNG</h2>
-                                                <a href="#" class="navbar__item-link">Laptop DEell</a>
-                                                <a href="#" class="navbar__item-link">Laptop HP</a>
-                                                <a href="#" class="navbar__item-link">Laptop Lennovo</a>
-                                                <a href="#" class="navbar__item-link">Laptop LG</a>
-                                                <a href="#" class="navbar__item-link">Laptop Asus</a>
-                                                <a href="#" class="navbar__item-link">Laptop Gigabyte</a>
-                                                <a href="#" class="navbar__item-link">Laptop MSI</a>
-                                                <a href="#" class="navbar__item-link">Laptop Acer</a>
-                                                <a href="#" class="navbar__item-link">Laptop Apple</a>
-                                                <a href="#" class="navbar__item-link">Laptop Microsoft</a>
-                                                <a href="#" class="navbar__item-link">Laptop XPG</a>
-                                                <a href="#" class="navbar__item-link">Laptop Colorfull</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="#" class="navbar__link">
-                                <i class="navbar__icon fa-solid fa-computer"></i>
-                                <p class="navbar__name">PC ĐỒ HỌA - LÀM VIỆC</p>
-                            </a>
-                            <div class="navbar__sub">
-                                <div class="grid">
-                                    <div class="row">
-                                        <div class="col l-2-4 m-4 c-6">
-                                            <div class="navbar__sub-item">
-                                                <h2 class="navbar__item-title">PC DỰNG PHIM - EDITOR</h2>
-                                                <a href="#" class="navbar__item-link"></a>
-                                            </div>
-                                        </div>
-                                        <div class="col l-2-4 m-4 c-6">
-                                            <div class="navbar__sub-item">
-                                                <h2 class="navbar__item-title">PC AUDIO - MUSIC</h2>
-                                                <a href="#" class="navbar__item-link"></a>
-
-                                            </div>
-                                        </div>
-                                        <div class="col l-2-4 m-4 c-6">
-                                            <div class="navbar__sub-item">
-                                                <h2 class="navbar__item-title">PC ĐỒ HỌA 3DS - KIẾN TRÚC</h2>
-                                                <a href="#" class="navbar__item-link"></a>
-                                            </div>
-                                        </div>
-                                        <div class="col l-2-4 m-4 c-6">
-                                            <div class="navbar__sub-item">
-                                                <h2 class="navbar__item-title">PC ĐỒ HỌA AUTOCAD</h2>
-                                                <a href="#" class="navbar__item-link"></a>
-                                            </div>
-                                        </div>
-
-                                        <div class="col l-2-4 m-4 c-6">
-                                            <div class="navbar__sub-item">
-                                                <h2 class="navbar__item-title">BỘ MÁY SỬ DỤNG CPU INTEL XEON</h2>
-                                                <a href="#" class="navbar__item-link"></a>
-                                            </div>
-                                        </div>
-                                        <div class="col l-2-4 m-4 c-6">
-                                            <div class="navbar__sub-item">
-                                                <h2 class="navbar__item-title">BỘ MÁY SỬ DỤNG CPU AMD</h2>
-                                                <a href="#" class="navbar__item-link"></a>
-                                            </div>
-                                        </div>
-                                        <div class="col l-2-4 m-4 c-6">
-                                            <div class="navbar__sub-item">
-                                                <h2 class="navbar__item-title">BỘ MÁY SỬ DỤNG CPU INTEL CORE 1</h2>
-                                                <a href="#" class="navbar__item-link"></a>
-                                            </div>
-                                        </div>
-                                        <div class="col l-2-4 m-4 c-6">
-                                            <div class="navbar__sub-item">
-                                                <h2 class="navbar__item-title">PC AI - TRÍ TUỆ NHÂN TẠO</h2>
-                                                <a href="#" class="navbar__item-link"></a>
-                                            </div>
-                                        </div>
-                                        <div class="col l-2-4 m-4 c-6">
-                                            <div class="navbar__sub-item">
-                                                <h2 class="navbar__item-title">BỘ MÁY SỬ DỤNG CPU INTEL XEON</h2>
-                                                <a href="#" class="navbar__item-link"></a>
-                                            </div>
-                                        </div>
-                                        <div class="col l-2-4 m-4 c-6">
-                                            <div class="navbar__sub-item">
-                                                <h2 class="navbar__item-title">SEVER MÁY ẢO HÓA</h2>
-                                                <a href="#" class="navbar__item-link"></a>
-                                            </div>
-                                        </div>
-                                        <div class="col l-2-4 m-4 c-6">
-                                            <div class="navbar__sub-item">
-                                                <h2 class="navbar__item-title">BỘ MÁY TÍNH VĂN PHÒNG</h2>
-                                                <a href="#" class="navbar__item-link"></a>
-                                            </div>
-                                        </div>
-                                        <div class="col l-2-4 m-4 c-6">
-                                            <div class="navbar__sub-item">
-                                                <h2 class="navbar__item-title">APPLE IMAC</h2>
-                                                <a href="#" class="navbar__item-link"></a>
-                                            </div>
-                                        </div>
-                                        <div class="col l-2-4 m-4 c-6">
-                                            <div class="navbar__sub-item">
-                                                <h2 class="navbar__item-title">MÁY TÍNH ĐỒNG BỘ</h2>
-                                                <a href="#" class="navbar__item-link"></a>
-                                            </div>
-                                        </div>
-                                        <div class="col l-2-4 m-4 c-6">
-                                            <div class="navbar__sub-item">
-                                                <h2 class="navbar__item-title">PC ANIMATION - VFX</h2>
-                                                <a href="#" class="navbar__item-link"></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="#" class="navbar__link">
-                                <i class="navbar__icon fa-solid fa-desktop"></i>
-                                <p class="navbar__name">PC GAMING</p>
-                            </a>
-                            <div class="navbar__sub">
-                                <div class="grid">
-                                    <div class="row ">
-                                        <div class="col l-2-4 m-4 c-6">
-                                            <div class="navbar__sub-item">
-                                                <h2 class="navbar__item-title">CHỌN THEO NHU CẦU</h2>
-                                                <a href="#" class="navbar__item-link">PC ESPORT</a>
-                                                <a href="#" class="navbar__item-link">PC GAME AAA</a>
-                                                <a href="#" class="navbar__item-link">PC STREAM GAME</a>
-                                            </div>
-                                        </div>
-                                        <div class="col l-2-4 m-4 c-6">
-                                            <div class="navbar__sub-item">
-                                                <h2 class="navbar__item-title">CHỌN THEO KHOẢNG GIÁ</h2>
-                                                <a href="#" class="navbar__item-link">Dưới 10 triệu</a>
-                                                <a href="#" class="navbar__item-link">10 triệu - 15 triệu</a>
-                                                <a href="#" class="navbar__item-link">15 triệu - 20 triệu</a>
-                                                <a href="#" class="navbar__item-link">20 triệu - 30 triệu</a>
-                                                <a href="#" class="navbar__item-link">30 triệu - 50 triệu</a>
-                                                <a href="#" class="navbar__item-link">50 triệu - 100 triệu</a>
-                                                <a href="#" class="navbar__item-link">Trên 100 triệu</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="#" class="navbar__link">
-                                <i class="navbar__icon fa-solid fa-microchip"></i>
-                                <p class="navbar__name">LINH KIỆN MÁY TÍNH</p>
-                            </a>
-                            <div class="navbar__sub">
-                                <div class="grid">
-                                    <div class="row ">
-                                        <div class="col l-2-4 m-4 c-6">
-                                            <div class="navbar__sub-item">
-                                                <h2 class="navbar__item-title">CPU - BỘ VI XỬ LÝ</h2>
-                                                <a href="#" class="navbar__item-link">CPU AMD</a>
-                                                <a href="#" class="navbar__item-link">CPU INTEL</a>
-                                            </div>
-                                        </div>
-                                        <div class="col l-2-4 m-4 c-6">
-                                            <div class="navbar__sub-item">
-                                                <h2 class="navbar__item-title">MAIN - BO MẠCH CHỦ</h2>
-                                                <a href="#" class="navbar__item-link">Main NZXT</a>
-                                                <a href="#" class="navbar__item-link">Main Supermcro</a>
-                                                <a href="#" class="navbar__item-link">Main MSI</a>
-                                                <a href="#" class="navbar__item-link">Main Gigabyte</a>
-                                                <a href="#" class="navbar__item-link">Main Asus</a>
-                                            </div>
-                                        </div>
-                                        <div class="col l-2-4 m-4 c-6">
-                                            <div class="navbar__sub-item">
-                                                <h2 class="navbar__item-title">RAM - BỘ NHỚ TRONG</h2>
-                                                <a href="#" class="navbar__item-link">RAM Colorfull</a>
-                                                <a href="#" class="navbar__item-link">RAM Laptop</a>
-                                                <a href="#" class="navbar__item-link">RAM OCPC</a>
-                                                <a href="#" class="navbar__item-link">RAM Team</a>
-                                                <a href="#" class="navbar__item-link">RAM Micron</a>
-                                                <a href="#" class="navbar__item-link">RAM Kingston</a>
-                                                <a href="#" class="navbar__item-link">RAM Kingmax</a>
-                                                <a href="#" class="navbar__item-link">RAM HP</a>
-                                            </div>
-                                        </div>
-                                        <div class="col l-2-4 m-4 c-6">
-                                            <div class="navbar__sub-item">
-                                                <h2 class="navbar__item-title">VGA - CARD MÀN HÌNH</h2>
-                                                <a href="#" class="navbar__item-link">VGA Manli</a>
-                                                <a href="#" class="navbar__item-link">VGA Zotac</a>
-                                                <a href="#" class="navbar__item-link">VGA Saphire</a>
-                                                <a href="#" class="navbar__item-link">VGA Powercolor</a>
-                                                <a href="#" class="navbar__item-link">VGA MSI</a>
-                                                <a href="#" class="navbar__item-link">VGA Gigabyte</a>
-                                                <a href="#" class="navbar__item-link">VGA Evga</a>
-                                                <a href="#" class="navbar__item-link">VGA Asrock</a>
-                                            </div>
-                                        </div>
-                                        <div class="col l-2-4 m-4 c-6">
-                                            <div class="navbar__sub-item">
-                                                <h2 class="navbar__item-title">PSU - NGUỒN MÁY TÍNH</h2>
-                                                <a href="#" class="navbar__item-link">Nguồn GAMEMAX</a>
-                                                <a href="#" class="navbar__item-link">Nguồn NZXT</a>
-                                                <a href="#" class="navbar__item-link">Nguồn Xigmatek</a>
-                                                <a href="#" class="navbar__item-link">Nguồn Tech</a>
-                                                <a href="#" class="navbar__item-link">Nguồn Sma</a>
-                                                <a href="#" class="navbar__item-link">Nguồn GiGabyte</a>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="#" class="navbar__link">
-                                <i class="navbar__icon fa-solid fa-hard-drive"></i>
-                                <p class="navbar__name">THIẾT BỊ LƯU TRỮ</p>
-                            </a>
-                            <div class="navbar__sub">
-                                <div class="grid">
-                                    <div class="row ">
-                                        <div class="col l-2-4 m-4 c-6">
-                                            <div class="navbar__sub-item">
-                                                <h2 class="navbar__item-title">CPU - BỘ VI XỬ LÝ</h2>
-                                                <a href="#" class="navbar__item-link">CPU AMD</a>
-                                                <a href="#" class="navbar__item-link">CPU INTEL</a>
-                                            </div>
-                                        </div>
-                                        <div class="col l-2-4 m-4 c-6">
-                                            <div class="navbar__sub-item">
-                                                <h2 class="navbar__item-title">MAIN - BO MẠCH CHỦ</h2>
-                                                <a href="#" class="navbar__item-link">Main NZXT</a>
-                                                <a href="#" class="navbar__item-link">Main Supermcro</a>
-                                                <a href="#" class="navbar__item-link">Main MSI</a>
-                                                <a href="#" class="navbar__item-link">Main Gigabyte</a>
-                                                <a href="#" class="navbar__item-link">Main Asus</a>
-                                            </div>
-                                        </div>
-                                        <div class="col l-2-4 m-4 c-6">
-                                            <div class="navbar__sub-item">
-                                                <h2 class="navbar__item-title">RAM - BỘ NHỚ TRONG</h2>
-                                                <a href="#" class="navbar__item-link">RAM Colorfull</a>
-                                                <a href="#" class="navbar__item-link">RAM Laptop</a>
-                                                <a href="#" class="navbar__item-link">RAM OCPC</a>
-                                                <a href="#" class="navbar__item-link">RAM Team</a>
-                                                <a href="#" class="navbar__item-link">RAM Micron</a>
-                                                <a href="#" class="navbar__item-link">RAM Kingston</a>
-                                                <a href="#" class="navbar__item-link">RAM Kingmax</a>
-                                                <a href="#" class="navbar__item-link">RAM HP</a>
-                                            </div>
-                                        </div>
-                                        <div class="col l-2-4 m-4 c-6">
-                                            <div class="navbar__sub-item">
-                                                <h2 class="navbar__item-title">VGA - CARD MÀN HÌNH</h2>
-                                                <a href="#" class="navbar__item-link">VGA Manli</a>
-                                                <a href="#" class="navbar__item-link">VGA Zotac</a>
-                                                <a href="#" class="navbar__item-link">VGA Saphire</a>
-                                                <a href="#" class="navbar__item-link">VGA Powercolor</a>
-                                                <a href="#" class="navbar__item-link">VGA MSI</a>
-                                                <a href="#" class="navbar__item-link">VGA Gigabyte</a>
-                                                <a href="#" class="navbar__item-link">VGA Evga</a>
-                                                <a href="#" class="navbar__item-link">VGA Asrock</a>
-                                            </div>
-                                        </div>
-                                        <div class="col l-2-4 m-4 c-6">
-                                            <div class="navbar__sub-item">
-                                                <h2 class="navbar__item-title">PSU - NGUỒN MÁY TÍNH</h2>
-                                                <a href="#" class="navbar__item-link">Nguồn GAMEMAX</a>
-                                                <a href="#" class="navbar__item-link">Nguồn NZXT</a>
-                                                <a href="#" class="navbar__item-link">Nguồn Xigmatek</a>
-                                                <a href="#" class="navbar__item-link">Nguồn Tech</a>
-                                                <a href="#" class="navbar__item-link">Nguồn Sma</a>
-                                                <a href="#" class="navbar__item-link">Nguồn GiGabyte</a>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="#" class="navbar__link">
-                                <i class="navbar__icon fa-solid fa-desktop"></i>
-                                <p class="navbar__name">MÀN HÌNH MÁY TÍNH</p>
-                            </a>
-                            <div class="navbar__sub">
-                                <div class="grid">
-                                    <div class="row ">
-                                        <div class="col l-2-4 m-4 c-6">
-                                            <div class="navbar__sub-item">
-                                                <h2 class="navbar__item-title">CPU - BỘ VI XỬ LÝ</h2>
-                                                <a href="#" class="navbar__item-link">CPU AMD</a>
-                                                <a href="#" class="navbar__item-link">CPU INTEL</a>
-                                            </div>
-                                        </div>
-                                        <div class="col l-2-4 m-4 c-6">
-                                            <div class="navbar__sub-item">
-                                                <h2 class="navbar__item-title">MAIN - BO MẠCH CHỦ</h2>
-                                                <a href="#" class="navbar__item-link">Main NZXT</a>
-                                                <a href="#" class="navbar__item-link">Main Supermcro</a>
-                                                <a href="#" class="navbar__item-link">Main MSI</a>
-                                                <a href="#" class="navbar__item-link">Main Gigabyte</a>
-                                                <a href="#" class="navbar__item-link">Main Asus</a>
-                                            </div>
-                                        </div>
-                                        <div class="col l-2-4 m-4 c-6">
-                                            <div class="navbar__sub-item">
-                                                <h2 class="navbar__item-title">RAM - BỘ NHỚ TRONG</h2>
-                                                <a href="#" class="navbar__item-link">RAM Colorfull</a>
-                                                <a href="#" class="navbar__item-link">RAM Laptop</a>
-                                                <a href="#" class="navbar__item-link">RAM OCPC</a>
-                                                <a href="#" class="navbar__item-link">RAM Team</a>
-                                                <a href="#" class="navbar__item-link">RAM Micron</a>
-                                                <a href="#" class="navbar__item-link">RAM Kingston</a>
-                                                <a href="#" class="navbar__item-link">RAM Kingmax</a>
-                                                <a href="#" class="navbar__item-link">RAM HP</a>
-                                            </div>
-                                        </div>
-                                        <div class="col l-2-4 m-4 c-6">
-                                            <div class="navbar__sub-item">
-                                                <h2 class="navbar__item-title">VGA - CARD MÀN HÌNH</h2>
-                                                <a href="#" class="navbar__item-link">VGA Manli</a>
-                                                <a href="#" class="navbar__item-link">VGA Zotac</a>
-                                                <a href="#" class="navbar__item-link">VGA Saphire</a>
-                                                <a href="#" class="navbar__item-link">VGA Powercolor</a>
-                                                <a href="#" class="navbar__item-link">VGA MSI</a>
-                                                <a href="#" class="navbar__item-link">VGA Gigabyte</a>
-                                                <a href="#" class="navbar__item-link">VGA Evga</a>
-                                                <a href="#" class="navbar__item-link">VGA Asrock</a>
-                                            </div>
-                                        </div>
-                                        <div class="col l-2-4 m-4 c-6">
-                                            <div class="navbar__sub-item">
-                                                <h2 class="navbar__item-title">PSU - NGUỒN MÁY TÍNH</h2>
-                                                <a href="#" class="navbar__item-link">Nguồn GAMEMAX</a>
-                                                <a href="#" class="navbar__item-link">Nguồn NZXT</a>
-                                                <a href="#" class="navbar__item-link">Nguồn Xigmatek</a>
-                                                <a href="#" class="navbar__item-link">Nguồn Tech</a>
-                                                <a href="#" class="navbar__item-link">Nguồn Sma</a>
-                                                <a href="#" class="navbar__item-link">Nguồn GiGabyte</a>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="#" class="navbar__link">
-                                <i class="navbar__icon fa-solid fa-computer-mouse"></i>
-                                <p class="navbar__name">PHÍM CHUỘT, GHẾ, GEAR</p>
-                            </a>
-                            <div class="navbar__sub">
-                                <div class="grid">
-                                    <div class="row ">
-                                        <div class="col l-2-4 m-4 c-6">
-                                            <div class="navbar__sub-item">
-                                                <h2 class="navbar__item-title">CPU - BỘ VI XỬ LÝ</h2>
-                                                <a href="#" class="navbar__item-link">CPU AMD</a>
-                                                <a href="#" class="navbar__item-link">CPU INTEL</a>
-                                            </div>
-                                        </div>
-                                        <div class="col l-2-4 m-4 c-6">
-                                            <div class="navbar__sub-item">
-                                                <h2 class="navbar__item-title">MAIN - BO MẠCH CHỦ</h2>
-                                                <a href="#" class="navbar__item-link">Main NZXT</a>
-                                                <a href="#" class="navbar__item-link">Main Supermcro</a>
-                                                <a href="#" class="navbar__item-link">Main MSI</a>
-                                                <a href="#" class="navbar__item-link">Main Gigabyte</a>
-                                                <a href="#" class="navbar__item-link">Main Asus</a>
-                                            </div>
-                                        </div>
-                                        <div class="col l-2-4 m-4 c-6">
-                                            <div class="navbar__sub-item">
-                                                <h2 class="navbar__item-title">RAM - BỘ NHỚ TRONG</h2>
-                                                <a href="#" class="navbar__item-link">RAM Colorfull</a>
-                                                <a href="#" class="navbar__item-link">RAM Laptop</a>
-                                                <a href="#" class="navbar__item-link">RAM OCPC</a>
-                                                <a href="#" class="navbar__item-link">RAM Team</a>
-                                                <a href="#" class="navbar__item-link">RAM Micron</a>
-                                                <a href="#" class="navbar__item-link">RAM Kingston</a>
-                                                <a href="#" class="navbar__item-link">RAM Kingmax</a>
-                                                <a href="#" class="navbar__item-link">RAM HP</a>
-                                            </div>
-                                        </div>
-                                        <div class="col l-2-4 m-4 c-6">
-                                            <div class="navbar__sub-item">
-                                                <h2 class="navbar__item-title">VGA - CARD MÀN HÌNH</h2>
-                                                <a href="#" class="navbar__item-link">VGA Manli</a>
-                                                <a href="#" class="navbar__item-link">VGA Zotac</a>
-                                                <a href="#" class="navbar__item-link">VGA Saphire</a>
-                                                <a href="#" class="navbar__item-link">VGA Powercolor</a>
-                                                <a href="#" class="navbar__item-link">VGA MSI</a>
-                                                <a href="#" class="navbar__item-link">VGA Gigabyte</a>
-                                                <a href="#" class="navbar__item-link">VGA Evga</a>
-                                                <a href="#" class="navbar__item-link">VGA Asrock</a>
-                                            </div>
-                                        </div>
-                                        <div class="col l-2-4 m-4 c-6">
-                                            <div class="navbar__sub-item">
-                                                <h2 class="navbar__item-title">PSU - NGUỒN MÁY TÍNH</h2>
-                                                <a href="#" class="navbar__item-link">Nguồn GAMEMAX</a>
-                                                <a href="#" class="navbar__item-link">Nguồn NZXT</a>
-                                                <a href="#" class="navbar__item-link">Nguồn Xigmatek</a>
-                                                <a href="#" class="navbar__item-link">Nguồn Tech</a>
-                                                <a href="#" class="navbar__item-link">Nguồn Sma</a>
-                                                <a href="#" class="navbar__item-link">Nguồn GiGabyte</a>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="#" class="navbar__link">
-                                <i class="navbar__icon fa-solid fa-fan"></i>
-                                <p class="navbar__name">TẢN NHIỆT PC - COOLING</p>
-                            </a>
-                            <div class="navbar__sub">
-                                <div class="grid">
-                                    <div class="row ">
-                                        <div class="col l-2-4 m-4 c-6">
-                                            <div class="navbar__sub-item">
-                                                <h2 class="navbar__item-title">CPU - BỘ VI XỬ LÝ</h2>
-                                                <a href="#" class="navbar__item-link">CPU AMD</a>
-                                                <a href="#" class="navbar__item-link">CPU INTEL</a>
-                                            </div>
-                                        </div>
-                                        <div class="col l-2-4 m-4 c-6">
-                                            <div class="navbar__sub-item">
-                                                <h2 class="navbar__item-title">MAIN - BO MẠCH CHỦ</h2>
-                                                <a href="#" class="navbar__item-link">Main NZXT</a>
-                                                <a href="#" class="navbar__item-link">Main Supermcro</a>
-                                                <a href="#" class="navbar__item-link">Main MSI</a>
-                                                <a href="#" class="navbar__item-link">Main Gigabyte</a>
-                                                <a href="#" class="navbar__item-link">Main Asus</a>
-                                            </div>
-                                        </div>
-                                        <div class="col l-2-4 m-4 c-6">
-                                            <div class="navbar__sub-item">
-                                                <h2 class="navbar__item-title">RAM - BỘ NHỚ TRONG</h2>
-                                                <a href="#" class="navbar__item-link">RAM Colorfull</a>
-                                                <a href="#" class="navbar__item-link">RAM Laptop</a>
-                                                <a href="#" class="navbar__item-link">RAM OCPC</a>
-                                                <a href="#" class="navbar__item-link">RAM Team</a>
-                                                <a href="#" class="navbar__item-link">RAM Micron</a>
-                                                <a href="#" class="navbar__item-link">RAM Kingston</a>
-                                                <a href="#" class="navbar__item-link">RAM Kingmax</a>
-                                                <a href="#" class="navbar__item-link">RAM HP</a>
-                                            </div>
-                                        </div>
-                                        <div class="col l-2-4 m-4 c-6">
-                                            <div class="navbar__sub-item">
-                                                <h2 class="navbar__item-title">VGA - CARD MÀN HÌNH</h2>
-                                                <a href="#" class="navbar__item-link">VGA Manli</a>
-                                                <a href="#" class="navbar__item-link">VGA Zotac</a>
-                                                <a href="#" class="navbar__item-link">VGA Saphire</a>
-                                                <a href="#" class="navbar__item-link">VGA Powercolor</a>
-                                                <a href="#" class="navbar__item-link">VGA MSI</a>
-                                                <a href="#" class="navbar__item-link">VGA Gigabyte</a>
-                                                <a href="#" class="navbar__item-link">VGA Evga</a>
-                                                <a href="#" class="navbar__item-link">VGA Asrock</a>
-                                            </div>
-                                        </div>
-                                        <div class="col l-2-4 m-4 c-6">
-                                            <div class="navbar__sub-item">
-                                                <h2 class="navbar__item-title">PSU - NGUỒN MÁY TÍNH</h2>
-                                                <a href="#" class="navbar__item-link">Nguồn GAMEMAX</a>
-                                                <a href="#" class="navbar__item-link">Nguồn NZXT</a>
-                                                <a href="#" class="navbar__item-link">Nguồn Xigmatek</a>
-                                                <a href="#" class="navbar__item-link">Nguồn Tech</a>
-                                                <a href="#" class="navbar__item-link">Nguồn Sma</a>
-                                                <a href="#" class="navbar__item-link">Nguồn GiGabyte</a>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="#" class="navbar__link">
-                                <i class="navbar__icon fa-solid fa-print"></i>
-                                <p class="navbar__name">THIẾT BỊ VĂN PHÒNG</p>
-                            </a>
-                            <div class="navbar__sub">
-                                <div class="grid">
-                                    <div class="row ">
-                                        <div class="col l-2-4 m-4 c-6">
-                                            <div class="navbar__sub-item">
-                                                <h2 class="navbar__item-title">CPU - BỘ VI XỬ LÝ</h2>
-                                                <a href="#" class="navbar__item-link">CPU AMD</a>
-                                                <a href="#" class="navbar__item-link">CPU INTEL</a>
-                                            </div>
-                                        </div>
-                                        <div class="col l-2-4 m-4 c-6">
-                                            <div class="navbar__sub-item">
-                                                <h2 class="navbar__item-title">MAIN - BO MẠCH CHỦ</h2>
-                                                <a href="#" class="navbar__item-link">Main NZXT</a>
-                                                <a href="#" class="navbar__item-link">Main Supermcro</a>
-                                                <a href="#" class="navbar__item-link">Main MSI</a>
-                                                <a href="#" class="navbar__item-link">Main Gigabyte</a>
-                                                <a href="#" class="navbar__item-link">Main Asus</a>
-                                            </div>
-                                        </div>
-                                        <div class="col l-2-4 m-4 c-6">
-                                            <div class="navbar__sub-item">
-                                                <h2 class="navbar__item-title">RAM - BỘ NHỚ TRONG</h2>
-                                                <a href="#" class="navbar__item-link">RAM Colorfull</a>
-                                                <a href="#" class="navbar__item-link">RAM Laptop</a>
-                                                <a href="#" class="navbar__item-link">RAM OCPC</a>
-                                                <a href="#" class="navbar__item-link">RAM Team</a>
-                                                <a href="#" class="navbar__item-link">RAM Micron</a>
-                                                <a href="#" class="navbar__item-link">RAM Kingston</a>
-                                                <a href="#" class="navbar__item-link">RAM Kingmax</a>
-                                                <a href="#" class="navbar__item-link">RAM HP</a>
-                                            </div>
-                                        </div>
-                                        <div class="col l-2-4 m-4 c-6">
-                                            <div class="navbar__sub-item">
-                                                <h2 class="navbar__item-title">VGA - CARD MÀN HÌNH</h2>
-                                                <a href="#" class="navbar__item-link">VGA Manli</a>
-                                                <a href="#" class="navbar__item-link">VGA Zotac</a>
-                                                <a href="#" class="navbar__item-link">VGA Saphire</a>
-                                                <a href="#" class="navbar__item-link">VGA Powercolor</a>
-                                                <a href="#" class="navbar__item-link">VGA MSI</a>
-                                                <a href="#" class="navbar__item-link">VGA Gigabyte</a>
-                                                <a href="#" class="navbar__item-link">VGA Evga</a>
-                                                <a href="#" class="navbar__item-link">VGA Asrock</a>
-                                            </div>
-                                        </div>
-                                        <div class="col l-2-4 m-4 c-6">
-                                            <div class="navbar__sub-item">
-                                                <h2 class="navbar__item-title">PSU - NGUỒN MÁY TÍNH</h2>
-                                                <a href="#" class="navbar__item-link">Nguồn GAMEMAX</a>
-                                                <a href="#" class="navbar__item-link">Nguồn NZXT</a>
-                                                <a href="#" class="navbar__item-link">Nguồn Xigmatek</a>
-                                                <a href="#" class="navbar__item-link">Nguồn Tech</a>
-                                                <a href="#" class="navbar__item-link">Nguồn Sma</a>
-                                                <a href="#" class="navbar__item-link">Nguồn GiGabyte</a>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="#" class="navbar__link">
-                                <i class="navbar__icon fa-solid fa-file-audio"></i>
-                                <p class="navbar__name">THIẾT BỊ ÂM THANH</p>
-                            </a>
-                            <div class="navbar__sub">
-                                <div class="grid">
-                                    <div class="row ">
-                                        <div class="col l-2-4 m-4 c-6">
-                                            <div class="navbar__sub-item">
-                                                <h2 class="navbar__item-title">CPU - BỘ VI XỬ LÝ</h2>
-                                                <a href="#" class="navbar__item-link">CPU AMD</a>
-                                                <a href="#" class="navbar__item-link">CPU INTEL</a>
-                                            </div>
-                                        </div>
-                                        <div class="col l-2-4 m-4 c-6">
-                                            <div class="navbar__sub-item">
-                                                <h2 class="navbar__item-title">MAIN - BO MẠCH CHỦ</h2>
-                                                <a href="#" class="navbar__item-link">Main NZXT</a>
-                                                <a href="#" class="navbar__item-link">Main Supermcro</a>
-                                                <a href="#" class="navbar__item-link">Main MSI</a>
-                                                <a href="#" class="navbar__item-link">Main Gigabyte</a>
-                                                <a href="#" class="navbar__item-link">Main Asus</a>
-                                            </div>
-                                        </div>
-                                        <div class="col l-2-4 m-4 c-6">
-                                            <div class="navbar__sub-item">
-                                                <h2 class="navbar__item-title">RAM - BỘ NHỚ TRONG</h2>
-                                                <a href="#" class="navbar__item-link">RAM Colorfull</a>
-                                                <a href="#" class="navbar__item-link">RAM Laptop</a>
-                                                <a href="#" class="navbar__item-link">RAM OCPC</a>
-                                                <a href="#" class="navbar__item-link">RAM Team</a>
-                                                <a href="#" class="navbar__item-link">RAM Micron</a>
-                                                <a href="#" class="navbar__item-link">RAM Kingston</a>
-                                                <a href="#" class="navbar__item-link">RAM Kingmax</a>
-                                                <a href="#" class="navbar__item-link">RAM HP</a>
-                                            </div>
-                                        </div>
-                                        <div class="col l-2-4 m-4 c-6">
-                                            <div class="navbar__sub-item">
-                                                <h2 class="navbar__item-title">VGA - CARD MÀN HÌNH</h2>
-                                                <a href="#" class="navbar__item-link">VGA Manli</a>
-                                                <a href="#" class="navbar__item-link">VGA Zotac</a>
-                                                <a href="#" class="navbar__item-link">VGA Saphire</a>
-                                                <a href="#" class="navbar__item-link">VGA Powercolor</a>
-                                                <a href="#" class="navbar__item-link">VGA MSI</a>
-                                                <a href="#" class="navbar__item-link">VGA Gigabyte</a>
-                                                <a href="#" class="navbar__item-link">VGA Evga</a>
-                                                <a href="#" class="navbar__item-link">VGA Asrock</a>
-                                            </div>
-                                        </div>
-                                        <div class="col l-2-4 m-4 c-6">
-                                            <div class="navbar__sub-item">
-                                                <h2 class="navbar__item-title">PSU - NGUỒN MÁY TÍNH</h2>
-                                                <a href="#" class="navbar__item-link">Nguồn GAMEMAX</a>
-                                                <a href="#" class="navbar__item-link">Nguồn NZXT</a>
-                                                <a href="#" class="navbar__item-link">Nguồn Xigmatek</a>
-                                                <a href="#" class="navbar__item-link">Nguồn Tech</a>
-                                                <a href="#" class="navbar__item-link">Nguồn Sma</a>
-                                                <a href="#" class="navbar__item-link">Nguồn GiGabyte</a>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="#" class="navbar__link">
-                                <i class="navbar__icon fa-solid fa-network-wired"></i>
-                                <p class="navbar__name">THIẾT BỊ MẠNG</p>
-                            </a>
-                            <div class="navbar__sub">
-                                <div class="grid">
-                                    <div class="row ">
-                                        <div class="col l-2-4 m-4 c-6">
-                                            <div class="navbar__sub-item">
-                                                <h2 class="navbar__item-title">CPU - BỘ VI XỬ LÝ</h2>
-                                                <a href="#" class="navbar__item-link">CPU AMD</a>
-                                                <a href="#" class="navbar__item-link">CPU INTEL</a>
-                                            </div>
-                                        </div>
-                                        <div class="col l-2-4 m-4 c-6">
-                                            <div class="navbar__sub-item">
-                                                <h2 class="navbar__item-title">MAIN - BO MẠCH CHỦ</h2>
-                                                <a href="#" class="navbar__item-link">Main NZXT</a>
-                                                <a href="#" class="navbar__item-link">Main Supermcro</a>
-                                                <a href="#" class="navbar__item-link">Main MSI</a>
-                                                <a href="#" class="navbar__item-link">Main Gigabyte</a>
-                                                <a href="#" class="navbar__item-link">Main Asus</a>
-                                            </div>
-                                        </div>
-                                        <div class="col l-2-4 m-4 c-6">
-                                            <div class="navbar__sub-item">
-                                                <h2 class="navbar__item-title">RAM - BỘ NHỚ TRONG</h2>
-                                                <a href="#" class="navbar__item-link">RAM Colorfull</a>
-                                                <a href="#" class="navbar__item-link">RAM Laptop</a>
-                                                <a href="#" class="navbar__item-link">RAM OCPC</a>
-                                                <a href="#" class="navbar__item-link">RAM Team</a>
-                                                <a href="#" class="navbar__item-link">RAM Micron</a>
-                                                <a href="#" class="navbar__item-link">RAM Kingston</a>
-                                                <a href="#" class="navbar__item-link">RAM Kingmax</a>
-                                                <a href="#" class="navbar__item-link">RAM HP</a>
-                                            </div>
-                                        </div>
-                                        <div class="col l-2-4 m-4 c-6">
-                                            <div class="navbar__sub-item">
-                                                <h2 class="navbar__item-title">VGA - CARD MÀN HÌNH</h2>
-                                                <a href="#" class="navbar__item-link">VGA Manli</a>
-                                                <a href="#" class="navbar__item-link">VGA Zotac</a>
-                                                <a href="#" class="navbar__item-link">VGA Saphire</a>
-                                                <a href="#" class="navbar__item-link">VGA Powercolor</a>
-                                                <a href="#" class="navbar__item-link">VGA MSI</a>
-                                                <a href="#" class="navbar__item-link">VGA Gigabyte</a>
-                                                <a href="#" class="navbar__item-link">VGA Evga</a>
-                                                <a href="#" class="navbar__item-link">VGA Asrock</a>
-                                            </div>
-                                        </div>
-                                        <div class="col l-2-4 m-4 c-6">
-                                            <div class="navbar__sub-item">
-                                                <h2 class="navbar__item-title">PSU - NGUỒN MÁY TÍNH</h2>
-                                                <a href="#" class="navbar__item-link">Nguồn GAMEMAX</a>
-                                                <a href="#" class="navbar__item-link">Nguồn NZXT</a>
-                                                <a href="#" class="navbar__item-link">Nguồn Xigmatek</a>
-                                                <a href="#" class="navbar__item-link">Nguồn Tech</a>
-                                                <a href="#" class="navbar__item-link">Nguồn Sma</a>
-                                                <a href="#" class="navbar__item-link">Nguồn GiGabyte</a>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="#" class="navbar__link">
-                                <i class="navbar__icon fa-solid fa-id-card"></i>
-                                <p class="navbar__name">PHẦN MỀM BẢN QUYỀN</p>
-                            </a>
-                            <div class="navbar__sub">
-                                <div class="grid">
-                                    <div class="row ">
-                                        <div class="col l-2-4 m-4 c-6">
-                                            <div class="navbar__sub-item">
-                                                <h2 class="navbar__item-title">CPU - BỘ VI XỬ LÝ</h2>
-                                                <a href="#" class="navbar__item-link">CPU AMD</a>
-                                                <a href="#" class="navbar__item-link">CPU INTEL</a>
-                                            </div>
-                                        </div>
-                                        <div class="col l-2-4 m-4 c-6">
-                                            <div class="navbar__sub-item">
-                                                <h2 class="navbar__item-title">MAIN - BO MẠCH CHỦ</h2>
-                                                <a href="#" class="navbar__item-link">Main NZXT</a>
-                                                <a href="#" class="navbar__item-link">Main Supermcro</a>
-                                                <a href="#" class="navbar__item-link">Main MSI</a>
-                                                <a href="#" class="navbar__item-link">Main Gigabyte</a>
-                                                <a href="#" class="navbar__item-link">Main Asus</a>
-                                            </div>
-                                        </div>
-                                        <div class="col l-2-4 m-4 c-6">
-                                            <div class="navbar__sub-item">
-                                                <h2 class="navbar__item-title">RAM - BỘ NHỚ TRONG</h2>
-                                                <a href="#" class="navbar__item-link">RAM Colorfull</a>
-                                                <a href="#" class="navbar__item-link">RAM Laptop</a>
-                                                <a href="#" class="navbar__item-link">RAM OCPC</a>
-                                                <a href="#" class="navbar__item-link">RAM Team</a>
-                                                <a href="#" class="navbar__item-link">RAM Micron</a>
-                                                <a href="#" class="navbar__item-link">RAM Kingston</a>
-                                                <a href="#" class="navbar__item-link">RAM Kingmax</a>
-                                                <a href="#" class="navbar__item-link">RAM HP</a>
-                                            </div>
-                                        </div>
-                                        <div class="col l-2-4 m-4 c-6">
-                                            <div class="navbar__sub-item">
-                                                <h2 class="navbar__item-title">VGA - CARD MÀN HÌNH</h2>
-                                                <a href="#" class="navbar__item-link">VGA Manli</a>
-                                                <a href="#" class="navbar__item-link">VGA Zotac</a>
-                                                <a href="#" class="navbar__item-link">VGA Saphire</a>
-                                                <a href="#" class="navbar__item-link">VGA Powercolor</a>
-                                                <a href="#" class="navbar__item-link">VGA MSI</a>
-                                                <a href="#" class="navbar__item-link">VGA Gigabyte</a>
-                                                <a href="#" class="navbar__item-link">VGA Evga</a>
-                                                <a href="#" class="navbar__item-link">VGA Asrock</a>
-                                            </div>
-                                        </div>
-                                        <div class="col l-2-4 m-4 c-6">
-                                            <div class="navbar__sub-item">
-                                                <h2 class="navbar__item-title">PSU - NGUỒN MÁY TÍNH</h2>
-                                                <a href="#" class="navbar__item-link">Nguồn GAMEMAX</a>
-                                                <a href="#" class="navbar__item-link">Nguồn NZXT</a>
-                                                <a href="#" class="navbar__item-link">Nguồn Xigmatek</a>
-                                                <a href="#" class="navbar__item-link">Nguồn Tech</a>
-                                                <a href="#" class="navbar__item-link">Nguồn Sma</a>
-                                                <a href="#" class="navbar__item-link">Nguồn GiGabyte</a>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
         <!-- Footer -->
 
         <footer class="footer">
@@ -2014,11 +2036,11 @@
         <a href="#" class="social-fix__link" style="background-color: #4167b2;">
             <i class="social-fix-icon fa-brands fa-facebook-f"></i>
         </a>
-        <a href="#" class="social-fix__link">
-            <i class="social-fix-icon fa-brands fa-youtube" style="background-color: #fe0100;"></i>
+        <a href="#" class="social-fix__link" style="background-color: #fe0100;">
+            <i class="social-fix-icon fa-brands fa-youtube"></i>
         </a>
-        <a href="#" class="social-fix__link">
-            <i class="social-fix-icon fa-brands fa-facebook-messenger" style="background-color: #4067b2;"></i>
+        <a href="#" class="social-fix__link" style="background-color: #4167b2;">
+            <i class="social-fix-icon fa-brands fa-facebook-messenger"></i>
         </a>
         <a href="#" class="social-fix__link" style="background-color: #1890ff;">
             <i class="social-fix-icon fa-brands fa-twitter"></i>
@@ -2306,5 +2328,6 @@
 <script src="assets/js/model.js"></script>
 <script src="assets/js/scroll.js"></script>
 <script src="assets/js/navbar.js"></script>
+<script src="assets/js/Redirect.js"></script>
 
 </html>
