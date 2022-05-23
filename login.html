@@ -1814,16 +1814,19 @@
                         <div class="login__title">Thông tin khách hàng đăng nhập hệ thống</div>
                         <div class="login__form-item">
                             <div class="login__form-label">Email đăng nhập</div>
-                            <input type="email" class="login__form-input">
+                            <input type="email" class="login__form-input" required>
                         </div>
                         <div class="login__form-item">
                             <div class="login__form-label">Mật khẩu</div>
-                            <input type="password" class="login__form-input">
+                            <input type="password" class="login__form-input" required>
                         </div>
                         <div class="login__form-item">
                             <div class="login__form-label"></div>
                             <div class="login__form-submit">
-                                <button class="login__form-submit-btn">Đăng nhập</button>
+                                <button id="submit" class="login__form-submit-btn">Đăng nhập</button>
+                                <script>
+                                    document.getElementById("submit").submit();
+                                </script>
                                 <a href="" class="login__form-submit-link">Quên mật khẩu</a>
                             </div>
                         </div>
