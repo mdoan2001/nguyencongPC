@@ -15,10 +15,12 @@
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/reponsive_model.css">
     <link rel="stylesheet" href="assets/css/product-detail.css">
+    <link rel="stylesheet" href="toast messages/toast-mess.css">
     <title>Chi tiết sản phẩm</title>
 </head>
 
 <body>
+    <div id="toast"></div>
     <div id="main">
 
         <!-- Header -->
@@ -100,15 +102,15 @@
                             </div>
                         </div>
                         <div class="header__main-options">
-                            <a href="#" class="header__main-options-item">
+                            <a href="#" class="header__main-options-item" onclick="showInfoToast()">
                                 <i class="header__main-options-icon fa-solid fa-gift"></i>
                                 <p class="header__main-options-text">Khuyến mại</p>
                             </a>
-                            <a href="#" class="header__main-options-item">
+                            <a href="#" class="header__main-options-item" onclick="showInfoToast()">
                                 <i class="header__main-options-icon fa-solid fa-desktop"></i>
                                 <p class="header__main-options-text">Xây dựng cấu hình</p>
                             </a>
-                            <a href="#" class="header__main-options-item header__cart">
+                            <a href="cart.html" class="header__main-options-item header__cart">
                                 <i class="header__main-options-icon fa-solid fa-cart-arrow-down"></i>
                                 <p class="header__main-options-text">Giỏ hàng</p>
                                 <span class="header__cart-count">
@@ -949,15 +951,15 @@
                             </div>
                         </div>
                         <div class="header__main-options">
-                            <a href="#" class="header__main-options-item">
+                            <a href="#" class="header__main-options-item" onclick="showInfoToast()">
                                 <i class="header__main-options-icon fa-solid fa-gift"></i>
                                 <p class="header__main-options-text">Khuyến mại</p>
                             </a>
-                            <a href="#" class="header__main-options-item">
+                            <a href="#" class="header__main-options-item" onclick="showInfoToast()">
                                 <i class="header__main-options-icon fa-solid fa-desktop"></i>
                                 <p class="header__main-options-text">Xây dựng cấu hình</p>
                             </a>
-                            <a href="#" class="header__main-options-item header__cart">
+                            <a href="cart.html" class="header__main-options-item header__cart">
                                 <i class="header__main-options-icon fa-solid fa-cart-arrow-down"></i>
                                 <p class="header__main-options-text">Giỏ hàng</p>
                                 <span class="header__cart-count">
@@ -1909,14 +1911,14 @@
                                 <h1>ĐẶT MUA NGAY</h1>
                                 <p>Giao hàng tận nơi nhanh chóng</p>
                             </a>
-                            <a href="cart.html" class="content__main-buy-btn content__main-buy-btn--50 content__main-buy-btn--blue">
+                            <button class="content__main-buy-btn content__main-buy-btn--50 content__main-buy-btn--blue" onclick="showInfoToast();">
                                 <h1>TRẢ GÓP QUA HỒ SƠ</h1>
                                 <p>Chỉ từ 1.915.000đ/tháng</p>
-                            </a>
-                            <a href="cart.html" class="content__main-buy-btn content__main-buy-btn--50 content__main-buy-btn--blue">
+                            </button>
+                            <button class="content__main-buy-btn content__main-buy-btn--50 content__main-buy-btn--blue" onclick="showInfoToast();">
                                 <h1>TRẢ GÓP QUA THẺ</h1>
                                 <p>Chỉ từ 957.500đ/tháng</p>
-                            </a>
+                            </button>
                         </div>
                     </div>
                     <div class="content__main-right">
@@ -2610,5 +2612,25 @@
 <script src="assets/js/scroll.js"></script>
 <script src="assets/js/navbar.js"></script>
 <script src="assets/js/Redirect.js"></script>
+<script>
+    function showSuccessToast() {
+        toast({
+            title: "Thành công!",
+            message: "Bạn đã đăng ký thành công tài khoản tại F8.",
+            type: "success",
+            duration: 5000
+        });
+    }
+
+    function showInfoToast() {
+        toast({
+            title: "Lưu ý!",
+            message: "Chức năng này chưa được cập nhật!",
+            type: "info",
+            duration: 2000
+        });
+    }
+</script>
+<script src="toast messages/toast-mess.js"></script>
 
 </html>

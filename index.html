@@ -16,10 +16,12 @@
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="assets/css/reponsive_model.css">
+    <link rel="stylesheet" href="toast messages/toast-mess.css">
     <title>Nguyễn Minh Đoàn</title>
 </head>
 
 <body>
+    <div id="toast"></div>
     <div id="main">
 
         <!-- Header -->
@@ -101,21 +103,22 @@
                             </div>
                         </div>
                         <div class="header__main-options">
-                            <a href="#" class="header__main-options-item">
+                            <a href="#" class="header__main-options-item" onclick="showInfoToast();">
                                 <i class="header__main-options-icon fa-solid fa-gift"></i>
                                 <p class="header__main-options-text">Khuyến mại</p>
                             </a>
-                            <a href="#" class="header__main-options-item">
+                            <a href="#" class="header__main-options-item" onclick="showInfoToast();">
                                 <i class="header__main-options-icon fa-solid fa-desktop"></i>
                                 <p class="header__main-options-text">Xây dựng cấu hình</p>
                             </a>
-                            <a href="#" class="header__main-options-item header__cart">
+                            <a href="cart.html" class="header__main-options-item header__cart">
                                 <i class="header__main-options-icon fa-solid fa-cart-arrow-down"></i>
                                 <p class="header__main-options-text">Giỏ hàng</p>
                                 <span class="header__cart-count">
                                     0
                                 </span>
                             </a>
+
                         </div>
                     </div>
                 </div>
@@ -950,11 +953,11 @@
                             </div>
                         </div>
                         <div class="header__main-options">
-                            <a href="#" class="header__main-options-item">
+                            <a href="#" class="header__main-options-item" onclick="showInfoToast();">
                                 <i class="header__main-options-icon fa-solid fa-gift"></i>
                                 <p class="header__main-options-text">Khuyến mại</p>
                             </a>
-                            <a href="#" class="header__main-options-item">
+                            <a href="#" class="header__main-options-item" onclick="showInfoToast();">
                                 <i class="header__main-options-icon fa-solid fa-desktop"></i>
                                 <p class="header__main-options-text">Xây dựng cấu hình</p>
                             </a>
@@ -3540,5 +3543,25 @@
 <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="assets/js/slider.js"></script>
+<script>
+    function showSuccessToast() {
+        toast({
+            title: "Thành công!",
+            message: "Bạn đã đăng ký thành công tài khoản tại F8.",
+            type: "success",
+            duration: 5000
+        });
+    }
+
+    function showInfoToast() {
+        toast({
+            title: "Lưu ý!",
+            message: "Chức năng này chưa được cập nhật!",
+            type: "info",
+            duration: 2000
+        });
+    }
+</script>
+<script src="toast messages/toast-mess.js"></script>
 
 </html>

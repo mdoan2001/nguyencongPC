@@ -248,6 +248,8 @@
     padding: 12px;
     color: #FFF;
     border-radius: 10px;
+    border: none;
+    cursor: pointer;
 }
 
 .content__main-buy-btn+.content__main-buy-btn {
